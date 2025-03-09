@@ -69,12 +69,3 @@ const textPorto = "My Portofolio Website";
 setTimeout(() => {
     document.getElementById("welcomeTo").style.opacity = 1;
 }, 1000);
-
-let scrollContainer = document.querySelector(".description");
-
-// Scroll menggunakan event wheel (desktop)
-scrollContainer.addEventListener("wheel", (evt) => {
-  evt.preventDefault();
-  scrollContainer.scrollLeft += evt.deltaX; // Scroll horizontal sesuai deltaY
-//   scrollContainer.scrollLeft += evt.deltaY*2; // Scroll horizontal sesuai deltaY
-});
